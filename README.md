@@ -1,0 +1,2 @@
+# pythonNote
+python笔记
