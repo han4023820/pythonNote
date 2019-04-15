@@ -1,2 +1,2 @@
-# pythonNote
-python笔记
+# python 爬虫笔记
+内有python基础知识及爬虫部分、系统编程未完全整理完毕，网络编程待整理中

@@ -1,0 +1,795 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>数据储存 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../数据获取/re.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../python/概述/概述.html">
+            
+                <a href="../../python/概述/概述.html">
+            
+                    
+                    python概述
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../python/概述/变量.html">
+            
+                <a href="../../python/概述/变量.html">
+            
+                    
+                    变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../python/数据类型/数据类型.html">
+            
+                <a href="../../python/数据类型/数据类型.html">
+            
+                    
+                    数据类型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../python/数据类型/字符串.html">
+            
+                <a href="../../python/数据类型/字符串.html">
+            
+                    
+                    字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../python/数据类型/列表.html">
+            
+                <a href="../../python/数据类型/列表.html">
+            
+                    
+                    列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../python/数据类型/元组.html">
+            
+                <a href="../../python/数据类型/元组.html">
+            
+                    
+                    元组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../python/数据类型/字典.html">
+            
+                <a href="../../python/数据类型/字典.html">
+            
+                    
+                    字典
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../python/数据类型/集合.html">
+            
+                <a href="../../python/数据类型/集合.html">
+            
+                    
+                    集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../python/运算符/运算符.html">
+            
+                <a href="../../python/运算符/运算符.html">
+            
+                    
+                    运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../python/流程控制/流程控制.html">
+            
+                <a href="../../python/流程控制/流程控制.html">
+            
+                    
+                    流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../python/函数/函数.html">
+            
+                <a href="../../python/函数/函数.html">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../python/函数/装饰器.html">
+            
+                <a href="../../python/函数/装饰器.html">
+            
+                    
+                    装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../python/常用的系统内建函数/内建函数.html">
+            
+                <a href="../../python/常用的系统内建函数/内建函数.html">
+            
+                    
+                    常用的系统内建函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../python/面向对象OOP/面向对象OOP.html">
+            
+                <a href="../../python/面向对象OOP/面向对象OOP.html">
+            
+                    
+                    面向对象OOP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../python/面向对象OOP/面向对象单例设计模式.html">
+            
+                <a href="../../python/面向对象OOP/面向对象单例设计模式.html">
+            
+                    
+                    面向对象单例设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../python/文件操作/文件操作.html">
+            
+                <a href="../../python/文件操作/文件操作.html">
+            
+                    
+                    文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../python/上下文管理器/上下文管理器.html">
+            
+                <a href="../../python/上下文管理器/上下文管理器.html">
+            
+                    
+                    上下文管理器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../python/迭代器和生成器/迭代器和生成器.html">
+            
+                <a href="../../python/迭代器和生成器/迭代器和生成器.html">
+            
+                    
+                    迭代器和生成器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../python/异常/异常.html">
+            
+                <a href="../../python/异常/异常.html">
+            
+                    
+                    异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../python/模块与包/模块与包.html">
+            
+                <a href="../../python/模块与包/模块与包.html">
+            
+                    
+                    模块与包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../概述/概述.html">
+            
+                <a href="../概述/概述.html">
+            
+                    
+                    爬虫概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../http/HTTP概述.html">
+            
+                <a href="../http/HTTP概述.html">
+            
+                    
+                    HTTP概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../数据获取/详解.html">
+            
+                <a href="../数据获取/详解.html">
+            
+                    
+                    数据获取
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" >
+            
+                <span>
+            
+                    
+                    数据采集部分
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1.1" data-path="../数据获取/urllib包.html">
+            
+                <a href="../数据获取/urllib包.html">
+            
+                    
+                    urllib包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.1.2" data-path="../数据获取/requests包.html">
+            
+                <a href="../数据获取/requests包.html">
+            
+                    
+                    requests包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.1.3" data-path="../数据获取/Selenium（浏览器测试）.html">
+            
+                <a href="../数据获取/Selenium（浏览器测试）.html">
+            
+                    
+                    Selenium（浏览器测试）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" >
+            
+                <span>
+            
+                    
+                    页面数据获取部分
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.2.1" data-path="../数据获取/lxml.html">
+            
+                <a href="../数据获取/lxml.html">
+            
+                    
+                    lxml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2.2" data-path="../数据获取/re.html">
+            
+                <a href="../数据获取/re.html">
+            
+                    
+                    re 正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.17" data-path="数据储存.html">
+            
+                <a href="数据储存.html">
+            
+                    
+                    数据储存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" >
+            
+                <span>
+            
+                    
+                    实训内容
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../实训内容/豆瓣.html">
+            
+                <a href="../实训内容/豆瓣.html">
+            
+                    
+                    豆瓣
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="../实训内容/爬图片.html">
+            
+                <a href="../实训内容/爬图片.html">
+            
+                    
+                    爬图片
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.3" data-path="../实训内容/云音乐.html">
+            
+                <a href="../实训内容/云音乐.html">
+            
+                    
+                    云音乐
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../Scrapy框架/Scrapy框架.html">
+            
+                <a href="../Scrapy框架/Scrapy框架.html">
+            
+                    
+                    Scrapy框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../../系统编程/系统编程.html">
+            
+                <a href="../../系统编程/系统编程.html">
+            
+                    
+                    系统编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >数据储存</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6570;&#x636E;&#x5B58;&#x50A8;">&#x6570;&#x636E;&#x5B58;&#x50A8;</h1>
+<p>&#x5148;&#x7528;request&#x628A;&#x6E90;&#x7801;&#x83B7;&#x53D6;&#xFF0C;&#x518D;&#x7528;&#x89E3;&#x6790;&#x5E93;&#x89E3;&#x6790;&#xFF0C;&#x4FDD;&#x5B58;&#x5230;&#x6587;&#x672C;</p>
+<h2 id="txt">txt</h2>
+<p>&#x6587;&#x672C;&#x6253;&#x5F00;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<pre><code>file = open(&apos;explore.txt&apos;, &apos;a&apos;, encoding=&apos;utf-8&apos;) #a&#x4EE3;&#x8868;&#x4EE5;&#x8FFD;&#x52A0;&#x7684;&#x65B9;&#x5F0F;&#x5199;&#x5165;&#x6587;&#x672C;
+    file.write(&apos;\n&apos;.join([question, author, answer]))
+    file.write(&apos;\n&apos; + &apos;=&apos; * 50 + &apos;\n&apos;)
+    file.close()
+</code></pre><p>r &#x53EA;&#x8BFB;<br>rb &#x4E8C;&#x8FDB;&#x5236;&#x53EA;&#x8BFB;<br>r+ &#x8BFB;&#x5199;<br>rb+ &#x4E8C;&#x8FDB;&#x5236;&#x8BFB;&#x5199;<br>w &#x53EA;&#x7528;&#x4E8E;&#x5199;&#x5165;<br>wb &#x4E8C;&#x8FDB;&#x5236;&#x5199;&#x5165;<br>w+ &#x8BFB;&#x5199;&#xFF0C;&#x5B58;&#x5728;&#x8986;&#x76D6;&#xFF0C;&#x4E0D;&#x5B58;&#x5728;&#x65B0;&#x5EFA;<br>a &#x8FFD;&#x52A0;<br>a+ &#x8FFD;&#x52A0;&#x8BFB;&#x5199;  </p>
+<h2 id="json">Json</h2>
+<p>JavaScript &#x5BF9;&#x8C61;&#x6807;&#x8BB0;&#xFF0C;&#x901A;&#x8FC7;&#x5BF9;&#x8C61;&#x548C;&#x6570;&#x7EC4;&#x7684;&#x7EC4;&#x5408;&#x6765;&#x8868;&#x793A;&#x6570;&#x636E;&#xFF0C;&#x6784;&#x9020;&#x7B80;&#x6D01;&#x4F46;&#x662F;&#x7ED3;&#x6784;&#x5316;&#x7A0B;&#x5EA6;&#x975E;&#x5E38;&#x9AD8;&#xFF0C;&#x5B83;&#x662F;&#x4E00;&#x79CD;&#x8F7B;&#x91CF;&#x7EA7;&#x7684;&#x6570;&#x636E;&#x4EA4;&#x6362;&#x683C;&#x5F0F;&#x3002;&#x4E00;&#x5207;&#x7686;&#x5BF9;&#x8C61;&#xFF0C;&#x5E38;&#x7528;&#x7684;&#x662F;&#x5BF9;&#x8C61;&#x548C;&#x6570;&#x7EC4;  </p>
+<p>&#x5BF9;&#x8C61; &#x6570;&#x636E;&#x7ED3;&#x6784;&#x4E3A; {key1&#xFF1A;value1, key2&#xFF1A;value2, ...} &#x7684;&#x952E;&#x503C;&#x5BF9;&#x7ED3;&#x6784;<br>&#x6570;&#x7EC4; &#x6570;&#x636E;&#x7ED3;&#x6784;&#x4E3A; [&quot;java&quot;, &quot;javascript&quot;, &quot;vb&quot;, ...] &#x7684;&#x7D22;&#x5F15;&#x7ED3;&#x6784;<br>&#x4E00;&#x4E2A;Json&#x5BF9;&#x8C61;</p>
+<pre><code>[{
+    &quot;name&quot;: &quot;Bob&quot;,
+    &quot;gender&quot;: &quot;male&quot;,
+    &quot;birthday&quot;: &quot;1992-10-18&quot;
+}, {
+     &quot;name&quot;: &quot;Selina&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;birthday&quot;: &quot;1995-10-18&quot;
+}]
+</code></pre><p><strong>&#x8BFB;&#x53D6;Json</strong><br>loads() &#x65B9;&#x6CD5;&#x5C06; Json &#x6587;&#x672C;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x4E3A; Json &#x5BF9;&#x8C61;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; dumps()&#x65B9;&#x6CD5;&#x5C06; Json &#x5BF9;&#x8C61;&#x8F6C;&#x4E3A;&#x6587;&#x672C;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<pre><code>data = json.loads(str)
+print(data)
+
+&#x8BFB;&#x53D6;json&#x6587;&#x4EF6;
+with open(&apos;data.json&apos;, &apos;r&apos;) as file:
+str = file.read()
+data = json.loads(str)
+print(data)
+</code></pre><h2 id="csv">CSV</h2>
+<p>&#x5199;&#x5165;</p>
+<pre><code>import csv
+with open(&apos;data.csv&apos;, &apos;w&apos;) as csvfile:
+    writer = csv.writer(csvfile)
+writer.writerow([&apos;id&apos;, &apos;name&apos;, &apos;age&apos;])
+    writer.writerows([[&apos;10001&apos;, &apos;Mike&apos;, 20], [&apos;10002&apos;, &apos;Bob&apos;, 22], [&apos;10003&apos;, &apos;Jordan&apos;, 21]])
+</code></pre><p>&#x8BFB;&#x53D6;</p>
+<pre><code>import pandas as pd df = pd.read_csv(&apos;data.csv&apos;) print(df)
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../数据获取/re.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: re 正则表达式">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"数据储存","level":"1.17","depth":1,"next":{"title":"实训内容","level":"1.18","depth":1,"ref":"","articles":[{"title":"豆瓣","level":"1.18.1","depth":2,"path":"爬虫/实训内容/豆瓣.md","ref":"爬虫/实训内容/豆瓣.md","articles":[]},{"title":"爬图片","level":"1.18.2","depth":2,"path":"爬虫/实训内容/爬图片.md","ref":"爬虫/实训内容/爬图片.md","articles":[]},{"title":"云音乐","level":"1.18.3","depth":2,"path":"爬虫/实训内容/云音乐.md","ref":"爬虫/实训内容/云音乐.md","articles":[]}]},"previous":{"title":"re 正则表达式","level":"1.16.2.2","depth":3,"path":"爬虫/数据获取/re.md","ref":"爬虫/数据获取/re.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"爬虫/数据储存/数据储存.md","mtime":"2019-04-14T10:16:25.172Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-14T16:02:33.203Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,834 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Selenium（浏览器测试） · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="requests包.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../python/概述/概述.html">
+            
+                <a href="../../python/概述/概述.html">
+            
+                    
+                    python概述
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../python/概述/变量.html">
+            
+                <a href="../../python/概述/变量.html">
+            
+                    
+                    变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../python/数据类型/数据类型.html">
+            
+                <a href="../../python/数据类型/数据类型.html">
+            
+                    
+                    数据类型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../python/数据类型/字符串.html">
+            
+                <a href="../../python/数据类型/字符串.html">
+            
+                    
+                    字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../python/数据类型/列表.html">
+            
+                <a href="../../python/数据类型/列表.html">
+            
+                    
+                    列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../python/数据类型/元组.html">
+            
+                <a href="../../python/数据类型/元组.html">
+            
+                    
+                    元组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../python/数据类型/字典.html">
+            
+                <a href="../../python/数据类型/字典.html">
+            
+                    
+                    字典
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../python/数据类型/集合.html">
+            
+                <a href="../../python/数据类型/集合.html">
+            
+                    
+                    集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../python/运算符/运算符.html">
+            
+                <a href="../../python/运算符/运算符.html">
+            
+                    
+                    运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../python/流程控制/流程控制.html">
+            
+                <a href="../../python/流程控制/流程控制.html">
+            
+                    
+                    流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../python/函数/函数.html">
+            
+                <a href="../../python/函数/函数.html">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../python/函数/装饰器.html">
+            
+                <a href="../../python/函数/装饰器.html">
+            
+                    
+                    装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../python/常用的系统内建函数/内建函数.html">
+            
+                <a href="../../python/常用的系统内建函数/内建函数.html">
+            
+                    
+                    常用的系统内建函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../python/面向对象OOP/面向对象OOP.html">
+            
+                <a href="../../python/面向对象OOP/面向对象OOP.html">
+            
+                    
+                    面向对象OOP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../python/面向对象OOP/面向对象单例设计模式.html">
+            
+                <a href="../../python/面向对象OOP/面向对象单例设计模式.html">
+            
+                    
+                    面向对象单例设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../python/文件操作/文件操作.html">
+            
+                <a href="../../python/文件操作/文件操作.html">
+            
+                    
+                    文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../python/上下文管理器/上下文管理器.html">
+            
+                <a href="../../python/上下文管理器/上下文管理器.html">
+            
+                    
+                    上下文管理器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../python/迭代器和生成器/迭代器和生成器.html">
+            
+                <a href="../../python/迭代器和生成器/迭代器和生成器.html">
+            
+                    
+                    迭代器和生成器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../python/异常/异常.html">
+            
+                <a href="../../python/异常/异常.html">
+            
+                    
+                    异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../python/模块与包/模块与包.html">
+            
+                <a href="../../python/模块与包/模块与包.html">
+            
+                    
+                    模块与包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../概述/概述.html">
+            
+                <a href="../概述/概述.html">
+            
+                    
+                    爬虫概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../http/HTTP概述.html">
+            
+                <a href="../http/HTTP概述.html">
+            
+                    
+                    HTTP概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="详解.html">
+            
+                <a href="详解.html">
+            
+                    
+                    数据获取
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" >
+            
+                <span>
+            
+                    
+                    数据采集部分
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1.1" data-path="urllib包.html">
+            
+                <a href="urllib包.html">
+            
+                    
+                    urllib包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.1.2" data-path="requests包.html">
+            
+                <a href="requests包.html">
+            
+                    
+                    requests包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.16.1.3" data-path="Selenium（浏览器测试）.html">
+            
+                <a href="Selenium（浏览器测试）.html">
+            
+                    
+                    Selenium（浏览器测试）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" >
+            
+                <span>
+            
+                    
+                    页面数据获取部分
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.2.1" data-path="lxml.html">
+            
+                <a href="lxml.html">
+            
+                    
+                    lxml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2.2" data-path="re.html">
+            
+                <a href="re.html">
+            
+                    
+                    re 正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../数据储存/数据储存.html">
+            
+                <a href="../数据储存/数据储存.html">
+            
+                    
+                    数据储存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" >
+            
+                <span>
+            
+                    
+                    实训内容
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../实训内容/豆瓣.html">
+            
+                <a href="../实训内容/豆瓣.html">
+            
+                    
+                    豆瓣
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="../实训内容/爬图片.html">
+            
+                <a href="../实训内容/爬图片.html">
+            
+                    
+                    爬图片
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.3" data-path="../实训内容/云音乐.html">
+            
+                <a href="../实训内容/云音乐.html">
+            
+                    
+                    云音乐
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../Scrapy框架/Scrapy框架.html">
+            
+                <a href="../Scrapy框架/Scrapy框架.html">
+            
+                    
+                    Scrapy框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../../系统编程/系统编程.html">
+            
+                <a href="../../系统编程/系统编程.html">
+            
+                    
+                    系统编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Selenium（浏览器测试）</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="selenium&#xFF08;&#x6D4F;&#x89C8;&#x5668;&#x6D4B;&#x8BD5;&#xFF09;">Selenium&#xFF08;&#x6D4F;&#x89C8;&#x5668;&#x6D4B;&#x8BD5;&#xFF09;</h1>
+<h2 id="&#x6982;&#x8FF0;">&#x6982;&#x8FF0;</h2>
+<p>Selenium&#x662F;&#x4E00;&#x4E2A;web&#x7684;&#x81EA;&#x52A8;&#x5316;&#x6D4B;&#x8BD5;&#x5DE5;&#x5177;&#xFF0C;&#x6700;&#x521D;&#x662F;&#x4E3A;&#x7F51;&#x7AD9;&#x81EA;&#x52A8;&#x5316;&#x6D4B;&#x8BD5;&#x800C;&#x5F00;&#x53D1;&#x7684;&#xFF0C;&#x7C7B;&#x578B;&#x50CF;&#x6211;&#x4EEC;&#x73A9;&#x6E38;&#x620F;&#x65F6;&#x7528;&#x7684;&#x6309;&#x952E;&#x7CBE;&#x7075;&#xFF0C;&#x53EF;&#x4EE5;&#x6309;&#x6307;&#x5B9A;&#x7684;&#x547D;&#x4EE4;&#x81EA;&#x52A8;&#x64CD;&#x4F5C;&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x662F;Selenium&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8FD0;&#x884C;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E0A;&#xFF0C;&#x5B83;&#x652F;&#x6301;&#x6240;&#x6709;&#x4E3B;&#x6D41;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#xFF08;&#x5305;&#x62EC;PhantomJS&#x8FD9;&#x4E9B;&#x65E0;&#x754C;&#x9762;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#xFF09;<br><a href="https://selenium-python-zh.readthedocs.io/en/latest/" target="_blank">&#x4E2D;&#x6587;&#x6587;&#x6863;</a>  </p>
+<h3 id="&#x5B89;&#x88C5;&#x6D41;&#x7A0B;&#x5B89;&#x88C5;">&#x5B89;&#x88C5;&#x6D41;&#x7A0B;&#x5B89;&#x88C5;</h3>
+<p>pip install selenium<br><a href="http://npm.taobao.org/mirrors/chromedriver/" target="_blank">&#x5B89;&#x88C5; ChromeDriver Mirror</a></p>
+<h2 id="&#x64CD;&#x4F5C;&#x6B65;&#x9AA4;">&#x64CD;&#x4F5C;&#x6B65;&#x9AA4;</h2>
+<p>1.&#x5BFC;&#x5165; from selenium import webdriver<br>2.driver.get(&quot;<a href="http://118.190.150.35:9000/login" target="_blank">http://118.190.150.35:9000/login</a>&quot;)  </p>
+<pre><code># &#x6253;&#x5F00;&#x7F51;&#x5740;&#xFF0C;&#x6253;&#x5F00;&#x9700;&#x8981;&#x65F6;&#x95F4;&#xFF0C;&#x5EFA;&#x8BAE;time.sleep()  
+</code></pre><p>3.&#x64CD;&#x4F5C;&#x6570;&#x636E;<br>4.drive.quit()  &#x5173;&#x95ED;&#x6D4F;&#x89C8;&#x5668;</p>
+<h2 id="&#x8BE6;&#x7EC6;&#x64CD;&#x4F5C;">&#x8BE6;&#x7EC6;&#x64CD;&#x4F5C;</h2>
+<h3 id="&#x83B7;&#x53D6;&#x9875;&#x9762;&#x5143;&#x7D20;">&#x83B7;&#x53D6;&#x9875;&#x9762;&#x5143;&#x7D20;</h3>
+<pre><code>driver.find_element_by_id(&apos;loginForm&apos;) #&#x901A;&#x8FC7;ID&#x83B7;&#x53D6;&#x5143;&#x7D20;
+driver.find_element_by_name(&apos;continue&apos;) #&#x901A;&#x8FC7;name&#x5C5E;&#x6027;&#x83B7;&#x53D6;&#x5143;&#x7D20;
+driver.find_element_by_xpath(&quot;//form[@id=&apos;loginForm&apos;]/input[4]&quot;) #&#x901A;&#x8FC7;XPath&#x67E5;&#x627E;&#x5143;&#x7D20;
+driver.find_element_by_link_text(&apos;Continue&apos;)    #&#x901A;&#x8FC7;&#x94FE;&#x63A5;&#x6587;&#x672C;&#x83B7;&#x53D6;&#x8D85;&#x94FE;&#x63A5;
+driver.find_element_by_partial_link_text(&apos;Conti&apos;)
+driver.find_element_by_tag_name(&apos;h1&apos;) #&#x901A;&#x8FC7;&#x6807;&#x7B7E;&#x540D;&#x67E5;&#x627E;&#x5143;&#x7D20;
+driver.find_element_by_class_name(&apos;content&apos;) #&#x901A;&#x8FC7;Class name &#x5B9A;&#x4F4D;&#x5143;&#x7D20;
+driver.find_element_by_css_selector(&apos;p.content&apos;) #&#x901A;&#x8FC7;CSS&#x9009;&#x62E9;&#x5668;&#x67E5;&#x627E;&#x5143;&#x7D20;
+</code></pre><p><a href="https://selenium-python-zh.readthedocs.io/en/latest/locating-elements.html#locating-elements" target="_blank">&#x8BE6;&#x7EC6;&#x5185;&#x5BB9;</a></p>
+<h3 id="&#x4E8B;&#x4EF6;">&#x4E8B;&#x4EF6;</h3>
+<ul>
+<li>&#x6B65;&#x9AA4;<ul>
+<li>from selenium.webdriver import ActionChains<br> <code># &#x5BFC;&#x5165; ActionChains &#x7C7B;</code></li>
+<li>loginbtn = driver.find_element_by_partial_link_text(&quot;&#x767B;&quot;)<br><code># &#x83B7;&#x53D6;&#x5143;&#x7D20;</code></li>
+<li>action = ActionChains(driver)<br><code># &#x521B;&#x5EFA;&#x5BF9;&#x8C61;</code></li>
+<li>action.click(loginbtn)<br><code># &#x586B;&#x5199;&#x4E8B;&#x4EF6;</code></li>
+<li>action.click(loginbtn).perform()<br><code># &#x6267;&#x884C;</code></li>
+</ul>
+</li>
+<li>&#x4E8B;&#x4EF6;&#x65B9;&#x6CD5;<pre><code>click()  &#x5355;&#x51FB;
+double_click()  &#x53CC;&#x51FB;
+context_click(ac)  &#x53F3;&#x51FB;
+click_and_hold()  &#x6309;&#x4E0B;
+drag_and_drop(e1,e2)  &#x5C06;&#x5143;&#x7D20;e1&#x79FB;&#x52A8;&#x5230;e2
+drag_and_drop_by_offset(e1,x,y)  &#x5C06;&#x5143;&#x7D20;&#x79FB;&#x52A8;&#x4F4D;&#x7F6E;
+release(e)  &#x91CA;&#x653E;&#x9F20;&#x6807;&#x6309;&#x94AE;
+pause(num)  &#x505C;&#x51E0;&#x79D2;
+send_keys(con)  &#x5C06;con&#x53D1;&#x9001;&#x5230;&#x5F53;&#x524D;&#x805A;&#x7126;&#x5143;&#x7D20;
+send_keys_to_element(ele,con)  &#x5C06;con&#x53D1;&#x9001;&#x5230;&#x5143;&#x7D20;
+</code></pre><h3 id="&#x4E0B;&#x62C9;&#x6846;&#x5904;&#x7406;">&#x4E0B;&#x62C9;&#x6846;&#x5904;&#x7406;</h3>
+</li>
+<li>&#x6B65;&#x9AA4;<ul>
+<li>from selenium.webdriver.support.ui import Select
+  &#x5BFC;&#x5165;select&#x7C7B;</li>
+<li>select = Select&#xFF08;ele&#xFF09;
+  &#x521B;&#x5EFA;&#x9009;&#x62E9;&#x5BF9;&#x8C61;</li>
+<li>select_by_index(1)<br>select_by_value(&quot;0&quot;)<br>select_by_visible_rext(&quot;&#x9009;&#x62E9;&#x7684;&#x5185;&#x5BB9;&quot;)<br>deselect_all()  &#x53D6;&#x6D88;&#x9009;&#x62E9;  <h3 id="&#x5F39;&#x7A97;&#x5904;&#x7406;">&#x5F39;&#x7A97;&#x5904;&#x7406;</h3>
+alert = driver.switch to alert()  &#x83B7;&#x53D6;&#x5F39;&#x6846;&#x5185;&#x5BB9;<h3 id="&#x9875;&#x9762;&#x5207;&#x6362;">&#x9875;&#x9762;&#x5207;&#x6362;</h3>
+driver.switch_to_alert()  &#x83B7;&#x53D6;&#x5F39;&#x7A97;&#x5185;&#x5BB9;
+for handle in driver.window_handles:
+driver.switch_to_window(handle)<h3 id="&#x9875;&#x9762;&#x524D;&#x8FDB;&#x548C;&#x540E;&#x9000;">&#x9875;&#x9762;&#x524D;&#x8FDB;&#x548C;&#x540E;&#x9000;</h3>
+driver.forward()  #&#x524D;&#x8FDB;
+driver.back()  #&#x540E;&#x9000;<h3 id="cookies">Cookies</h3>
+driver.get_cookie()  # &#x83B7;&#x53D6;cookies
+driver.delete_cookie(&quot;key&quot;)  # &#x5220;&#x9664;&#x5BF9;&#x5E94;cookie
+driver.delete_all_coolies()  # &#x5220;&#x9664;&#x5168;&#x90E8;cookie<h3 id="&#x9875;&#x9762;&#x7B49;&#x5F85;">&#x9875;&#x9762;&#x7B49;&#x5F85;</h3>
+<a href="https://selenium-python-zh.readthedocs.io/en/latest/waits.html#id2" target="_blank">&#x8BE6;&#x7EC6;&#x89E3;&#x7B54;</a><br>&#x663E;&#x5F0F;&#x7B49;&#x5F85;
+<img src="3.png" alt="image"><br>&#x9690;&#x5F0F;&#x7B49;&#x5F85;
+<img src="4.png" alt="image">  <h3 id="&#x7011;&#x5E03;&#x6D41;&#x5E03;&#x5C40;">&#x7011;&#x5E03;&#x6D41;&#x5E03;&#x5C40;</h3>
+dirver.execute_script()
+&#x6267;&#x884C;JavaScript &#x811A;&#x672C;<br>driver.quit()
+&#x5173;&#x95ED;&#x6D4F;&#x89C8;&#x5668;<br>dirver.save_screenshot(&apos;abc.png&apos;)
+&#x9875;&#x9762;&#x5FEB;&#x7167;<br>dirver.page_source
+&#x9875;&#x9762;&#x6E90;&#x7801;<br>&#x6848;&#x4F8B;:&#x7011;&#x5E03;&#x6D41;&#x5E03;&#x5C40;
+```
+url = &quot;<a href="https://unsplash.com/t/wallpapers" target="_blank">https://unsplash.com/t/wallpapers</a>&quot;
+driver.get(url)
+driver.execute_script(&quot;window.scrollTo(0,2000)&quot;)        # &#x6267;&#x884C;JavaScript&#x811A;&#x672C;</li>
+</ul>
+</li>
+</ul>
+<p>time.sleep(5)
+with open(&quot;img.html&quot;,&apos;w&apos;,encoding=&apos;utf-8&apos;) as f:
+    f.write(driver.page_source)     # &#x9875;&#x9762;&#x6E90;&#x7801;</p>
+<p>driver.save_screenshot(&quot;img.png&quot;)       # &#x9875;&#x9762;&#x5FEB;&#x7167;
+driver.close()      # &#x5173;&#x95ED;&#x6D4F;&#x89C8;&#x5668;
+```</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="requests包.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: requests包">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Selenium（浏览器测试）","level":"1.16.1.3","depth":3,"next":{"title":"页面数据获取部分","level":"1.16.2","depth":2,"ref":"","articles":[{"title":"lxml","level":"1.16.2.1","depth":3,"path":"爬虫/数据获取/lxml.md","ref":"爬虫/数据获取/lxml.md","articles":[]},{"title":"re 正则表达式","level":"1.16.2.2","depth":3,"path":"爬虫/数据获取/re.md","ref":"爬虫/数据获取/re.md","articles":[]}]},"previous":{"title":"requests包","level":"1.16.1.2","depth":3,"path":"爬虫/数据获取/requests包.md","ref":"爬虫/数据获取/requests包.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"爬虫/数据获取/Selenium（浏览器测试）.md","mtime":"2019-04-14T09:43:23.596Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-14T16:02:33.203Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

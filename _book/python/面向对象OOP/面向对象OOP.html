@@ -1,0 +1,1250 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>面向对象OOP · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="面向对象单例设计模式.html" />
+    
+    
+    <link rel="prev" href="../常用的系统内建函数/内建函数.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../概述/概述.html">
+            
+                <a href="../概述/概述.html">
+            
+                    
+                    python概述
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../概述/变量.html">
+            
+                <a href="../概述/变量.html">
+            
+                    
+                    变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../数据类型/数据类型.html">
+            
+                <a href="../数据类型/数据类型.html">
+            
+                    
+                    数据类型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../数据类型/字符串.html">
+            
+                <a href="../数据类型/字符串.html">
+            
+                    
+                    字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../数据类型/列表.html">
+            
+                <a href="../数据类型/列表.html">
+            
+                    
+                    列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../数据类型/元组.html">
+            
+                <a href="../数据类型/元组.html">
+            
+                    
+                    元组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../数据类型/字典.html">
+            
+                <a href="../数据类型/字典.html">
+            
+                    
+                    字典
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../数据类型/集合.html">
+            
+                <a href="../数据类型/集合.html">
+            
+                    
+                    集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../运算符/运算符.html">
+            
+                <a href="../运算符/运算符.html">
+            
+                    
+                    运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../流程控制/流程控制.html">
+            
+                <a href="../流程控制/流程控制.html">
+            
+                    
+                    流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../函数/函数.html">
+            
+                <a href="../函数/函数.html">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../函数/装饰器.html">
+            
+                <a href="../函数/装饰器.html">
+            
+                    
+                    装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../常用的系统内建函数/内建函数.html">
+            
+                <a href="../常用的系统内建函数/内建函数.html">
+            
+                    
+                    常用的系统内建函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="面向对象OOP.html">
+            
+                <a href="面向对象OOP.html">
+            
+                    
+                    面向对象OOP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="面向对象单例设计模式.html">
+            
+                <a href="面向对象单例设计模式.html">
+            
+                    
+                    面向对象单例设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../文件操作/文件操作.html">
+            
+                <a href="../文件操作/文件操作.html">
+            
+                    
+                    文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../上下文管理器/上下文管理器.html">
+            
+                <a href="../上下文管理器/上下文管理器.html">
+            
+                    
+                    上下文管理器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../迭代器和生成器/迭代器和生成器.html">
+            
+                <a href="../迭代器和生成器/迭代器和生成器.html">
+            
+                    
+                    迭代器和生成器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../异常/异常.html">
+            
+                <a href="../异常/异常.html">
+            
+                    
+                    异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../模块与包/模块与包.html">
+            
+                <a href="../模块与包/模块与包.html">
+            
+                    
+                    模块与包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../../爬虫/概述/概述.html">
+            
+                <a href="../../爬虫/概述/概述.html">
+            
+                    
+                    爬虫概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../../爬虫/http/HTTP概述.html">
+            
+                <a href="../../爬虫/http/HTTP概述.html">
+            
+                    
+                    HTTP概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../../爬虫/数据获取/详解.html">
+            
+                <a href="../../爬虫/数据获取/详解.html">
+            
+                    
+                    数据获取
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" >
+            
+                <span>
+            
+                    
+                    数据采集部分
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1.1" data-path="../../爬虫/数据获取/urllib包.html">
+            
+                <a href="../../爬虫/数据获取/urllib包.html">
+            
+                    
+                    urllib包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.1.2" data-path="../../爬虫/数据获取/requests包.html">
+            
+                <a href="../../爬虫/数据获取/requests包.html">
+            
+                    
+                    requests包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.1.3" data-path="../../爬虫/数据获取/Selenium（浏览器测试）.html">
+            
+                <a href="../../爬虫/数据获取/Selenium（浏览器测试）.html">
+            
+                    
+                    Selenium（浏览器测试）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" >
+            
+                <span>
+            
+                    
+                    页面数据获取部分
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.2.1" data-path="../../爬虫/数据获取/lxml.html">
+            
+                <a href="../../爬虫/数据获取/lxml.html">
+            
+                    
+                    lxml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2.2" data-path="../../爬虫/数据获取/re.html">
+            
+                <a href="../../爬虫/数据获取/re.html">
+            
+                    
+                    re 正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../../爬虫/数据储存/数据储存.html">
+            
+                <a href="../../爬虫/数据储存/数据储存.html">
+            
+                    
+                    数据储存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" >
+            
+                <span>
+            
+                    
+                    实训内容
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../../爬虫/实训内容/豆瓣.html">
+            
+                <a href="../../爬虫/实训内容/豆瓣.html">
+            
+                    
+                    豆瓣
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="../../爬虫/实训内容/爬图片.html">
+            
+                <a href="../../爬虫/实训内容/爬图片.html">
+            
+                    
+                    爬图片
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.3" data-path="../../爬虫/实训内容/云音乐.html">
+            
+                <a href="../../爬虫/实训内容/云音乐.html">
+            
+                    
+                    云音乐
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../../爬虫/Scrapy框架/Scrapy框架.html">
+            
+                <a href="../../爬虫/Scrapy框架/Scrapy框架.html">
+            
+                    
+                    Scrapy框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../../系统编程/系统编程.html">
+            
+                <a href="../../系统编程/系统编程.html">
+            
+                    
+                    系统编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >面向对象OOP</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x9762;&#x5411;&#x5BF9;&#x8C61;oop&#xFF08;object-oriented-programming&#xFF09;">&#x9762;&#x5411;&#x5BF9;&#x8C61;OOP&#xFF08;Object Oriented Programming&#xFF09;</h1>
+<h2 id="&#x7C7B;&#x4E0E;&#x5BF9;&#x8C61;&#x6982;&#x8FF0;">&#x7C7B;&#x4E0E;&#x5BF9;&#x8C61;&#x6982;&#x8FF0;</h2>
+<ul>
+<li>&#x7C7B;&#xFF1A;&#x7C7B;&#x662F;&#x5BF9;&#x8C61;&#x7684;&#x62BD;&#x8C61;&#xFF0C;&#x6BD4;&#x5982;&#x98DE;&#x673A;&#x56FE;&#x7EB8;&#xFF0C;&#x6708;&#x997C;&#x6A21;&#x5177;</li>
+<li>&#x5BF9;&#x8C61;&#xFF1A;&#x5BF9;&#x8C61;&#x662F;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x6BD4;&#x5982;&#x98DE;&#x673A;&#x3001;&#x6708;&#x997C;</li>
+<li>&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x4E09;&#x5927;&#x7279;&#x70B9;&#xFF1A;&#x5C01;&#x88C5;&#x3001;&#x7EE7;&#x627F;&#xFF08;&#x9ED8;&#x8BA4;&#x7EE7;&#x627F;object&#xFF09;&#x3001;&#x591A;&#x6001;</li>
+<li>&#x5173;&#x7CFB;&#xFF1A;&#x7C7B;&#x662F;&#x5BF9;&#x8C61;&#x7684;&#x6A21;&#x578B;&#xFF0C;&#x5BF9;&#x8C61;&#x662F;&#x7C7B;&#x7684;&#x5177;&#x4F53;&#x5B9E;&#x4F8B;&#x5316;<h2 id="&#x8BED;&#x6CD5;">&#x8BED;&#x6CD5;</h2>
+<pre><code>class  &#x7C7B;&#x540D;(&#x57FA;&#x7C7B;&#x3001;&#x7236;&#x7C7B;)
+  # &#x5B9E;&#x4F8B;&#x5C5E;&#x6027;
+  def __int__(self):   # self =&gt; this &#x5B9E;&#x4F8B; ;  __int__ =&gt; constructor (&#x6784;&#x9020;&#x51FD;&#x6570;)
+      self.name=&apos;wss&apos;
+      self.age = 18
+  # &#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;
+  def say(self):
+      print(self.name)
+</code></pre>&#x5B9E;&#x9645;&#x64CD;&#x4F5C;&#x793A;&#x8303;<pre><code># class Person:
+#     def __init__(self,name=&apos;wss&apos;,age=18):
+#         self.name= name
+#         self.age = age
+#     def say(self):
+#         print(&quot;my name is %s&quot;%self.name)
+#     def a(self):
+#         print(&quot;I am %s years old&quot;%self.age)
+# # &#x5B9E;&#x4F8B;&#x5316;&#xFF0C;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;
+# xm = Person(&apos;&#x5C0F;&#x660E;&apos;,17)
+# xm.say()
+# xm.a()
+</code></pre><h2 id="&#x6848;&#x4F8B;">&#x6848;&#x4F8B;</h2>
+<h3 id="&#x65F6;&#x949F;">&#x65F6;&#x949F;</h3>
+<pre><code>## &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65F6;&#x949F;&#x7C7B;
+# &#x5C5E;&#x6027;  &#x5C0F;&#x65F6;:&#x5206;&#x949F;:&#x79D2;&#x949F;
+# &#x65B9;&#x6CD5;
+# run  &#x8868;&#x8DD1;&#x8D77;&#x6765;
+# set  &#x8BBE;&#x7F6E;&#x65F6;&#x95F4;
+# print&#xFF08;obj&#xFF09;  &#x8F93;&#x51FA;&#x73B0;&#x5728;&#x7684;&#x65F6;&#x95F4;
+# class Clock:
+#     def __init__(self,hou=0,min=0,sec=0):     # &#x9B54;&#x6CD5;&#x65B9;&#x6CD5;
+#         self.hou = hou
+#         self.min = min
+#         self.sec = sec
+#     def __str__(self):    # &#x5BF9;&#x5B9E;&#x4F8B;&#x7684;&#x63CF;&#x8FF0;  print(obj) &#x6253;&#x5370; __str__()&#x9B54;&#x6CD5;&#x65B9;&#x6CD5;&#x7684;&#x8FD4;&#x56DE;&#x503C;
+#         return &apos;%0.2d:%0.2d:%0.2d&apos;%(self.hou,self.min,self.sec)
+#     def run(self):
+#         while True:
+#             print(self)
+#             time.sleep(1)   # &#x963B;&#x585E;&#x4EE3;&#x7801;
+#             self.sec += 1
+#             if self.sec&gt;59:
+#                 self.min+=1
+#                 self.sec=0
+#                 if self.min&gt;59:
+#                     self.hou+=1
+#                     self.min=0
+#                     if self.hou&gt;23:
+#                         self.hou=0
+#
+#
+# c1 = Clock(0,0,0)
+# c1.run()
+</code></pre><h3 id="&#x70E4;&#x5730;&#x74DC;">&#x70E4;&#x5730;&#x74DC;</h3>
+```<h2 id="&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x70E4;&#x5730;&#x74DC;&#x7C7B;">&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x70E4;&#x5730;&#x74DC;&#x7C7B;</h2>
+<h1 id="&#x5C5E;&#x6027;&#xFF1A;">&#x5C5E;&#x6027;&#xFF1A;</h1>
+<h1 id="cookedlevel&#xFF1A;&#x8FD9;&#x662F;&#x6570;&#x5B57;&#xFF1B;03&#x8868;&#x793A;&#x8FD8;&#x662F;&#x751F;&#x7684;&#xFF0C;&#x8D85;&#x8FC7;3&#x8868;&#x793A;&#x534A;&#x751F;&#x4E0D;&#x719F;&#xFF0C;&#x8D85;&#x8FC7;5-&#x8868;&#x793A;&#x5DF2;&#x7ECF;&#x70E4;&#x597D;&#x4E86;&#xFF0C;&#x8D85;&#x8FC7;8&#x8868;&#x793A;&#x5DF2;&#x7ECF;&#x70E4;&#x6210;&#x4E86;&#x6728;&#x70AD;&#xFF01;&#x5730;&#x74DC;&#x521A;&#x5F00;&#x59CB;&#x7684;&#x65F6;&#x5019;&#x662F;&#x751F;&#x7684;&#x3002;">cookedLevel&#xFF1A;&#x8FD9;&#x662F;&#x6570;&#x5B57;&#xFF1B;0~3&#x8868;&#x793A;&#x8FD8;&#x662F;&#x751F;&#x7684;&#xFF0C;&#x8D85;&#x8FC7;3&#x8868;&#x793A;&#x534A;&#x751F;&#x4E0D;&#x719F;&#xFF0C;&#x8D85;&#x8FC7;5 &#x8868;&#x793A;&#x5DF2;&#x7ECF;&#x70E4;&#x597D;&#x4E86;&#xFF0C;&#x8D85;&#x8FC7;8&#x8868;&#x793A;&#x5DF2;&#x7ECF;&#x70E4;&#x6210;&#x4E86;&#x6728;&#x70AD;&#xFF01;&#x5730;&#x74DC;&#x521A;&#x5F00;&#x59CB;&#x7684;&#x65F6;&#x5019;&#x662F;&#x751F;&#x7684;&#x3002;</h1>
+<h1 id="cookedstring&#xFF1A;&#x8FD9;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#xFF1B;&#x63CF;&#x8FF0;&#x5730;&#x74DC;&#x7684;&#x751F;&#x719F;&#x7A0B;&#x5EA6;">cookedString&#xFF1A;&#x8FD9;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#xFF1B;&#x63CF;&#x8FF0;&#x5730;&#x74DC;&#x7684;&#x751F;&#x719F;&#x7A0B;&#x5EA6;</h1>
+<h1 id="condiments&#x8FD9;&#x662F;&#x5730;&#x74DC;&#x7684;&#x914D;&#x6599;&#x8868;&#xFF0C;&#x6BD4;&#x5982;&#x756A;&#x8304;&#x9171;&#x3001;&#x82A5;&#x672B;&#x9171;">condiments:&#x8FD9;&#x662F;&#x5730;&#x74DC;&#x7684;&#x914D;&#x6599;&#x8868;&#xFF0C;&#x6BD4;&#x5982;&#x756A;&#x8304;&#x9171;&#x3001;&#x82A5;&#x672B;&#x9171;</h1>
+<h1 id="&#x65B9;&#x6CD5;&#xFF1A;">&#x65B9;&#x6CD5;&#xFF1A;</h1>
+<h1 id="cook-&#x628A;&#x5730;&#x74DC;&#x70E4;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;">cook() &#x628A;&#x5730;&#x74DC;&#x70E4;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;</h1>
+<h1 id="addcondiments-&#x7ED9;&#x5730;&#x74DC;&#x6DFB;&#x52A0;&#x914D;&#x6599;">addCondiments() &#x7ED9;&#x5730;&#x74DC;&#x6DFB;&#x52A0;&#x914D;&#x6599;</h1>
+<h1 id="init-&#x8BBE;&#x7F6E;&#x9ED8;&#x8BA4;&#x5C5E;&#x6027;"><strong>init</strong>() &#x8BBE;&#x7F6E;&#x9ED8;&#x8BA4;&#x5C5E;&#x6027;</h1>
+<h1 id="str-&#x8BA9;print&#x7684;&#x7ED3;&#x679C;&#x770B;&#x8D77;&#x6765;&#x66F4;&#x597D;&#x4E00;&#x4E9B;"><strong>str</strong>() &#x8BA9;print&#x7684;&#x7ED3;&#x679C;&#x770B;&#x8D77;&#x6765;&#x66F4;&#x597D;&#x4E00;&#x4E9B;</h1>
+</li>
+</ul>
+<p>class Potato:
+    def <strong>init</strong>(self,cookedLevel=0,cookedString=&apos;&#x751F;&apos;,condiments=&apos;&#x756A;&#x8304;&#x9171;&apos;):
+        self.cookedLevel = cookedLevel
+        self.cookedString = cookedString
+        self.condiments = condiments
+        self.condimentsList = [&apos;&#x82A5;&#x672B;&#x9171;&apos;,&apos;&#x756A;&#x8304;&#x9171;&apos;,&apos;&#x7518;&#x6885;&#x9171;&apos;]
+    def <strong>str</strong>(self):
+        return &apos;&#x60A8;&#x597D;&#xFF0C;&#x8FD9;&#x662F;&#x60A8;&#x7684;%s&#x53E3;&#x5473;&#x7684;%s&#x7684;&#x5730;&#x74DC;&apos;%(self.condiments,self.cookedString)
+    def cook(self,min):</p>
+<pre><code>    # while True:                    # &#x6CA1;&#x6709;&#x8FD9;&#x884C;&#x4EE3;&#x7801;&#xFF0C;&#x7ED3;&#x679C;&#x6253;&#x5370;&#x4E00;&#x884C;
+    #     time.sleep(1)                     # &#x963B;&#x585E;&#x4EE3;&#x7801;
+        self.cookedLevel += min             # &#x6BCF;&#x79D2;&#x52A0;&#x4E00;
+        if self.cookedLevel&gt;=0 and self.cookedLevel&lt;4:
+            self.cookedString = &apos;&#x751F;&apos;
+        elif self.cookedLevel&lt;6:
+            self.cookedString = &apos;&#x534A;&#x751F;&#x4E0D;&#x719F;&apos;
+        elif self.cookedLevel&lt;8:
+            self.cookedString = &apos;&#x53EF;&#x4EE5;&#x4EAB;&#x7528;&#x4E86;&apos;
+        elif self.cookedLevel&gt;=8:
+            self.cookedString = &apos;&#x7CCA;&#x5DF4;&#x4E86;&apos;
+def addCondiments(self,num):
+    self.condiments = self.condimentsList[num]
+</code></pre><h1 id="&#x5BA2;&#x6237;&#x6765;&#x4E86;">&#x5BA2;&#x6237;&#x6765;&#x4E86;</h1>
+<p>p1 = Potato()
+p2 = Potato()
+p3 = Potato()
+p4 = Potato()</p>
+<p>p1.cook(2)
+p2.cook(5)
+p3.cook(7)
+p4.cook(9)</p>
+<p>p1.addCondiments(0)
+p2.addCondiments(2)
+p3.addCondiments(1)
+p4.addCondiments(2)</p>
+<p>print(p1)
+print(p2)
+print(p3)
+print(p4)</p>
+<pre><code>
+### &#x7EDD;&#x5730;&#x6C42;&#x751F;
+</code></pre><p>class Ren:
+    def <strong>init</strong>(self,name):
+        self.name = name
+        self.xue = 100
+        self.qiang = None
+    def <strong>str</strong>(self):
+        return self.name + &quot;&#x5269;&#x4F59;&#x8840;&#x91CF;&quot; + str(self.xue)</p>
+<pre><code>def anzidan(self,danjia,zidan):
+    danjia.baocunzidan(zidan)
+
+def andanjia(self,qiang,danjia):
+    qiang.lianjiedanjia(danjia)
+
+def naqiang(self,qiang):
+    self.qiang = qiang
+
+def kaiqiang(self,diren):
+    self.qiang.she(diren)
+
+def diaoxue(self,shashangli):
+    self.xue -= shashangli
+</code></pre><p>class Danjia:</p>
+<pre><code>def __init__(self,rongliang):
+    self.rongliang = rongliang
+    self.rongnaList = []
+
+def __str__(self):
+    return &quot;&#x5F39;&#x5939;&#x5F53;&#x524D;&#x7684;&#x5B50;&#x5F39;&#x6570;&#x91CF;&#x4E3A;:&quot;+str(len(self.rongnaList))+&quot;/&quot;+str(self.rongliang)
+
+def baocunzidan(self,zidan):
+    if len(self.rongnaList)&lt;self.rongliang:
+        self.rongnaList.append(zidan)
+
+def chuzidan(self):
+    #&#x5224;&#x65AD;&#x5F53;&#x524D;&#x5F39;&#x5939;&#x4E2D;&#x662F;&#x5426;&#x8FD8;&#x6709;&#x5B50;&#x5F39;
+    if len(self.rongnaList) &gt;0:
+        zidan = self.rongnaList[-1]
+        self.rongnaList.pop()
+        return zidan
+    else:
+        return None
+</code></pre><p>class Zidan:</p>
+<pre><code>def __init__(self,shashangli):
+    self.shashangli = shashangli
+
+def shanghai(self,diren):
+    diren.diaoxue(self.shashangli)
+</code></pre><p>class Qiang:
+    def <strong>init</strong>(self):
+        self.danjia = None</p>
+<pre><code>def __str__(self):
+    if self.danjia:
+        return &quot;&#x67AA;&#x5F53;&#x524D;&#x6709;&#x5F39;&#x5939;&quot; 
+    else:
+        return &quot;&#x67AA;&#x5F53;&#x524D;&#x6CA1;&#x6709;&#x5F39;&#x5939;&quot;
+
+def lianjiedanjia(self,danjia):
+    if not self.danjia:
+        self.danjia = danjia
+def she(self,diren):
+    zidan = self.danjia.chuzidan()
+    if zidan:
+        zidan.shanghai(diren)
+    else:
+        print(&quot;&#x6CA1;&#x4E0E;&#x5B50;&#x5F39;&#x4E86;,&#x653E;&#x4E86;&#x7A7A;&#x6C14;&#x90A3;&#x4E2A;....&quot;)
+</code></pre><h1 id="&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x4EBA;&#xFF0C;&#x8001;&#x738B;">&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x4EBA;&#xFF0C;&#x8001;&#x738B;</h1>
+<p>laowang = Ren(&quot;&#x8001;&#x738B;&quot;)</p>
+<h1 id="&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5F39;&#x5939;&#xFF0C;&#x6709;20&#x53D1;&#x5BB9;&#x91CF;">&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5F39;&#x5939;&#xFF0C;&#x6709;20&#x53D1;&#x5BB9;&#x91CF;</h1>
+<p>danjia = Danjia(20)</p>
+<h1 id="&#x6253;&#x5370;&#x5F53;&#x524D;&#x5F39;&#x5939;&#x5BB9;&#x91CF;">&#x6253;&#x5370;&#x5F53;&#x524D;&#x5F39;&#x5939;&#x5BB9;&#x91CF;</h1>
+<p>print(danjia)</p>
+<h1 id="&#x628A;&#x5B50;&#x5F39;&#x88C5;&#x5165;&#x5F39;&#x5939;">&#x628A;&#x5B50;&#x5F39;&#x88C5;&#x5165;&#x5F39;&#x5939;</h1>
+<p>i=0
+while i&lt;5:
+    zidan = Zidan(5)
+    laowang.anzidan(danjia,zidan)
+    i+=1</p>
+<h1 id="&#x6253;&#x5370;&#x5F53;&#x524D;&#x5F39;&#x5939;&#x5BB9;&#x91CF;">&#x6253;&#x5370;&#x5F53;&#x524D;&#x5F39;&#x5939;&#x5BB9;&#x91CF;</h1>
+<p>print(danjia)</p>
+<h1 id="&#x521B;&#x5EFA;&#x4E00;&#x628A;&#x67AA;">&#x521B;&#x5EFA;&#x4E00;&#x628A;&#x67AA;</h1>
+<p>qiang = Qiang()</p>
+<h1 id="&#x6253;&#x5370;&#x67AA;&#x7684;&#x60C5;&#x51B5;">&#x6253;&#x5370;&#x67AA;&#x7684;&#x60C5;&#x51B5;</h1>
+<p>print(qiang)</p>
+<h1 id="&#x8001;&#x738B;&#x88C5;&#x5F39;&#x5939;">&#x8001;&#x738B;&#x88C5;&#x5F39;&#x5939;</h1>
+<p>laowang.andanjia(qiang,danjia)</p>
+<h1 id="&#x6253;&#x5370;&#x67AA;&#x7684;&#x60C5;&#x51B5;">&#x6253;&#x5370;&#x67AA;&#x7684;&#x60C5;&#x51B5;</h1>
+<p>print(qiang)</p>
+<h1 id="&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x654C;&#x4EBA;">&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x654C;&#x4EBA;</h1>
+<p>diren = Ren(&quot;&#x654C;&#x4EBA;&quot;)
+print(diren)</p>
+<h1 id="&#x8001;&#x738B;&#x62FF;&#x67AA;">&#x8001;&#x738B;&#x62FF;&#x67AA;</h1>
+<p>laowang.naqiang(qiang)</p>
+<h1 id="&#x8001;&#x738B;&#x5F00;&#x67AA;">&#x8001;&#x738B;&#x5F00;&#x67AA;</h1>
+<p>laowang.kaiqiang(diren)
+laowang.kaiqiang(diren)</p>
+<h2 id="printdiren">print(diren)</h2>
+<p>&#x4F5C;&#x8005;&#xFF1A;weixin_33965305 
+&#x6765;&#x6E90;&#xFF1A;CSDN 
+&#x539F;&#x6587;&#xFF1A;<a href="https://blog.csdn.net/weixin_33965305/article/details/88115529" target="_blank">https://blog.csdn.net/weixin_33965305/article/details/88115529</a> 
+&#x7248;&#x6743;&#x58F0;&#x660E;&#xFF1A;&#x672C;&#x6587;&#x4E3A;&#x535A;&#x4E3B;&#x539F;&#x521B;&#x6587;&#x7AE0;&#xFF0C;&#x8F6C;&#x8F7D;&#x8BF7;&#x9644;&#x4E0A;&#x535A;&#x6587;&#x94FE;&#x63A5;&#xFF01;</p>
+<pre><code>## &#x7C7B;&#x53D8;&#x91CF;&#x4E0E;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;
+
+**&#x7C7B;&#x53D8;&#x91CF;**&#xFF1A;&#x5B9A;&#x4E49;&#x5728;&#x7C7B;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x88AB;&#x7C7B;&#x65B9;&#x6CD5;&#xFF08;&#x4FEE;&#x6539;&#xFF09;&#xFF0C;&#x53EF;&#x4EE5;&#x88AB;&#x5B9E;&#x4F8B;&#x8BBF;&#x95EE;  
+**&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;**&#xFF1A;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x53EA;&#x80FD;&#x5B9E;&#x4F8B;&#x8C03;&#x7528;&#xFF0C;&#x4E14;&#x6743;&#x91CD;&#x5927;&#xFF08;&#x4F18;&#x5148;&#x7EA7;&#x5927;&#xFF09;&#xFF0C;&#x5B83;&#x662F;&#x540E;&#x5199;&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x628A;&#x4E4B;&#x524D;&#x7684;&#x5185;&#x5BB9;&#x8986;&#x76D6;&#x6389;
+### &#x6848;&#x4F8B;
+</code></pre><h1 id="class-p">class P:</h1>
+<h1 id="sex--&#x7537;--------&#x7C7B;&#x53D8;&#x91CF;&#xFF0C;&#x80FD;&#x591F;&#x88AB;&#x5B9E;&#x4F8B;&#x7EE7;&#x627F;&#xFF08;&#x56FE;&#x7EB8;&#xFF09;">sex = &apos;&#x7537;&apos;       # &#x7C7B;&#x53D8;&#x91CF;&#xFF0C;&#x80FD;&#x591F;&#x88AB;&#x5B9E;&#x4F8B;&#x7EE7;&#x627F;&#xFF08;&#x56FE;&#x7EB8;&#xFF09;</h1>
+<p>#</p>
+<h1 id="def-initself">def <strong>init</strong>(self):</h1>
+<h1 id="selfname--xm---------&#x5B9E;&#x4F8B;&#x5C5E;&#x6027;&#xFF0C;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;">self.name = &apos;xm&apos;        # &#x5B9E;&#x4F8B;&#x5C5E;&#x6027;&#xFF0C;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;</h1>
+<h1 id="selfsex--&#x7537;-----------&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x53EA;&#x80FD;&#x5B9E;&#x4F8B;&#x8C03;&#x7528;&#xFF0C;&#x4E14;&#x6743;&#x91CD;&#x5927;&#xFF08;&#x4F18;&#x5148;&#x7EA7;&#x5927;&#xFF09;&#xFF0C;&#x5B83;&#x662F;&#x540E;&#x5199;&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x628A;&#x4E4B;&#x524D;&#x7684;&#x5185;&#x5BB9;&#x8986;&#x76D6;&#x6389;">self.sex = &apos;&#x7537;&apos;          # &#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x53EA;&#x80FD;&#x5B9E;&#x4F8B;&#x8C03;&#x7528;&#xFF0C;&#x4E14;&#x6743;&#x91CD;&#x5927;&#xFF08;&#x4F18;&#x5148;&#x7EA7;&#x5927;&#xFF09;&#xFF0C;&#x5B83;&#x662F;&#x540E;&#x5199;&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x628A;&#x4E4B;&#x524D;&#x7684;&#x5185;&#x5BB9;&#x8986;&#x76D6;&#x6389;</h1>
+<p>#</p>
+<h1 id="staticmethod---&#x9759;&#x6001;&#x7C7B;&#x65B9;&#x6CD5;&#xFF0C;&#x4EC0;&#x4E48;&#x90FD;&#x4E0D;&#x80FD;&#x8C03;&#x7528;&#xFF0C;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x666E;&#x901A;&#x7684;&#x516C;&#x5171;&#x51FD;&#x6570;&#x529F;&#x80FD;&#xFF0C;-&#x8FDE;&#x6307;&#x9488;&#x90FD;&#x6CA1;&#x6709;">@staticmethod  # &#x9759;&#x6001;&#x7C7B;&#x65B9;&#x6CD5;&#xFF0C;&#x4EC0;&#x4E48;&#x90FD;&#x4E0D;&#x80FD;&#x8C03;&#x7528;&#xFF0C;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x666E;&#x901A;&#x7684;&#x516C;&#x5171;&#x51FD;&#x6570;&#x529F;&#x80FD;&#xFF0C; &#x8FDE;&#x6307;&#x9488;&#x90FD;&#x6CA1;&#x6709;</h1>
+<h1 id="def-say2">def say2():</h1>
+<h1 id="printthis-is-static">print(&quot;this is static&quot;)</h1>
+<p>#</p>
+<h1 id="classmethod---------&#x7C7B;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x8C03;&#x7528;&#x7C7B;&#x53D8;&#x91CF;">@classmethod        # &#x7C7B;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x8C03;&#x7528;&#x7C7B;&#x53D8;&#x91CF;</h1>
+<h1 id="def-setsexclssex">def setSex(cls,sex):</h1>
+<h1 id="printclsname">print(cls.name)</h1>
+<h1 id="clssex--sex">cls.sex = sex</h1>
+<p>#</p>
+<h1 id="def-say1self-------&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x8C03;&#x7528;&#x5B9E;&#x4F8B;&#x7684;&#x65B9;&#x6CD5;&#x548C;&#x5C5E;&#x6027;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x7EE7;&#x627F;&#x8FC7;&#x6765;&#x7684;&#x7C7B;&#x53D8;&#x91CF;">def say1(self):      # &#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x8C03;&#x7528;&#x5B9E;&#x4F8B;&#x7684;&#x65B9;&#x6CD5;&#x548C;&#x5C5E;&#x6027;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x7EE7;&#x627F;&#x8FC7;&#x6765;&#x7684;&#x7C7B;&#x53D8;&#x91CF;</h1>
+<h1 id="printselfname">print(self.name)</h1>
+<h1 id="printselfsex">print(self.sex)</h1>
+<h1 id="xm--p">xm = P()</h1>
+<h1 id="xmsex--&#x5973;---------&#x521B;&#x5EFA;&#x4E86;&#x5B9E;&#x4F8B;&#x5C5E;&#x6027;&#xFF08;&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;&#xFF09;&#xFF0C;&#x7ED9;&#x5B9E;&#x4F8B;&#x91CD;&#x65B0;&#x8D4B;&#x4E88;&#x5C5E;&#x6027;"># xm.sex = &apos;&#x5973;&apos;        # &#x521B;&#x5EFA;&#x4E86;&#x5B9E;&#x4F8B;&#x5C5E;&#x6027;&#xFF08;&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;&#xFF09;&#xFF0C;&#x7ED9;&#x5B9E;&#x4F8B;&#x91CD;&#x65B0;&#x8D4B;&#x4E88;&#x5C5E;&#x6027;</h1>
+<h1 id="psex--&#x5973;--------&#x6240;&#x6709;&#x7684;&#x5B9E;&#x4F8B;&#x7528;&#x7684;&#x90FD;&#x662F;&#x540C;&#x4E00;&#x4E2A;&#x7C7B;&#x53D8;&#x91CF;">P.sex = &apos;&#x5973;&apos;       # &#x6240;&#x6709;&#x7684;&#x5B9E;&#x4F8B;&#x7528;&#x7684;&#x90FD;&#x662F;&#x540C;&#x4E00;&#x4E2A;&#x7C7B;&#x53D8;&#x91CF;</h1>
+<h1 id="printxmsex--------&#x7C7B;&#x53D8;&#x91CF;&#x53EF;&#x4EE5;&#x88AB;&#x5B9E;&#x4F8B;&#x8C03;&#x7528;&#xFF0C;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x4E0E;&#x7C7B;&#x53D8;&#x91CF;&#x91CD;&#x540D;&#x65F6;&#xFF0C;&#x4F18;&#x5148;&#x8C03;&#x7528;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;">print(xm.sex)       # &#x7C7B;&#x53D8;&#x91CF;&#x53EF;&#x4EE5;&#x88AB;&#x5B9E;&#x4F8B;&#x8C03;&#x7528;&#xFF0C;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x4E0E;&#x7C7B;&#x53D8;&#x91CF;&#x91CD;&#x540D;&#x65F6;&#xFF0C;&#x4F18;&#x5148;&#x8C03;&#x7528;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;</h1>
+<h1 id="printpsex---------&#x7C7B;&#x53D8;&#x91CF;&#x4E5F;&#x53EF;&#x4EE5;&#x88AB;&#x7C7B;&#x8C03;&#x7528;">print(P.sex)        # &#x7C7B;&#x53D8;&#x91CF;&#x4E5F;&#x53EF;&#x4EE5;&#x88AB;&#x7C7B;&#x8C03;&#x7528;</h1>
+<h1 id="xh--p">xh = P()</h1>
+<h1 id="xhsay1">xh.say1()</h1>
+<h1 id="xhsay2">xh.say2()</h1>
+<h1 id="xm--p">xm = P()</h1>
+<h1 id="printxmname">print(xm.name)</h1>
+<h1 id="printxmsex----&#x5C0F;&#x660E;&#x7684;sex&#x7EE7;&#x627F;&#x7684;&#x7C7B;&#x53D8;&#x91CF;">print(xm.sex)   # &#x5C0F;&#x660E;&#x7684;sex&#x7EE7;&#x627F;&#x7684;&#x7C7B;&#x53D8;&#x91CF;</h1>
+<h1 id="psetsex&#x5973;----&#x8C03;&#x7528;&#x7C7B;&#x65B9;&#x6CD5;&#xFF0C;&#x4FEE;&#x6539;&#x7C7B;&#x53D8;&#x91CF;">P.setSex(&apos;&#x5973;&apos;)   # &#x8C03;&#x7528;&#x7C7B;&#x65B9;&#x6CD5;&#xFF0C;&#x4FEE;&#x6539;&#x7C7B;&#x53D8;&#x91CF;</h1>
+<h1 id="printxmsex">print(xm.sex)</h1>
+<h1 id="xmsetsex&#x7537;------xm&#x8FD9;&#x4E2A;&#x5B9E;&#x4F8B;&#x8C03;&#x7528;&#x4E86;&#x7EE7;&#x627F;&#x7684;&#x7C7B;&#x65B9;&#x6CD5;&#xFF0C;&#x4FEE;&#x6539;&#x4E86;&#x7C7B;&#x53D8;&#x91CF;">xm.setSex(&apos;&#x7537;&apos;)     # xm&#x8FD9;&#x4E2A;&#x5B9E;&#x4F8B;&#x8C03;&#x7528;&#x4E86;&#x7EE7;&#x627F;&#x7684;&#x7C7B;&#x65B9;&#x6CD5;&#xFF0C;&#x4FEE;&#x6539;&#x4E86;&#x7C7B;&#x53D8;&#x91CF;</h1>
+<h1 id="printxmsex">print(xm.sex)</h1>
+<h1 id="xmsex--&#x5973;-----&#x6DFB;&#x52A0;&#x4E86;&#x5B9E;&#x4F8B;&#x5C5E;&#x6027;sex&#xFF0C;&#x8986;&#x76D6;&#x4E86;&#x7EE7;&#x627F;&#x6765;&#x7684;&#x7C7B;&#x53D8;&#x91CF;sex&#xFF0C;&#x5E76;&#x6CA1;&#x6709;&#x4FEE;&#x6539;&#x4E86;&#x7C7B;&#x53D8;&#x91CF;">xm.sex = &apos;&#x5973;&apos;    # &#x6DFB;&#x52A0;&#x4E86;&#x5B9E;&#x4F8B;&#x5C5E;&#x6027;sex&#xFF0C;&#x8986;&#x76D6;&#x4E86;&#x7EE7;&#x627F;&#x6765;&#x7684;&#x7C7B;&#x53D8;&#x91CF;sex&#xFF0C;&#x5E76;&#x6CA1;&#x6709;&#x4FEE;&#x6539;&#x4E86;&#x7C7B;&#x53D8;&#x91CF;</h1>
+<h1 id="printxmsex">print(xm.sex)</h1>
+<h1 id="printpsex">print(P.sex)</h1>
+<pre><code>## &#x9759;&#x6001;&#x7C7B;&#x65B9;&#x6CD5;&#x3001;&#x7C7B;&#x65B9;&#x6CD5;&#x3001;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;
+* &#x9759;&#x6001;&#x7C7B;&#x65B9;&#x6CD5;:&#x901A;&#x8FC7;@staticmethod &#x88C5;&#x9970;&#xFF0C;&#x4E0D;&#x4F9D;&#x8D56;&#x4E8E;&#x7C7B;&#x53D8;&#x91CF;&#x3001;&#x7C7B;&#x65B9;&#x6CD5;&#xFF0C;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x3001;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;
+    * @staticmethod
+* &#x7C7B;&#x65B9;&#x6CD5;:&#x901A;&#x8FC7;@classmethod &#x88C5;&#x9970;&#xFF0C;&#x4FEE;&#x6539;&#x7C7B;&#x53D8;&#x91CF;
+    * @classmethod
+* &#x5B9E;&#x4F8B;&#x65B9;&#x6CD5; &#xFF1A;&#x53EF;&#x8C03;&#x7528;&#x5B9E;&#x4F8B;&#x7684;&#x65B9;&#x6CD5;&#x548C;&#x5C5E;&#x6027;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x7EE7;&#x627F;&#x8FC7;&#x6765;&#x7684;&#x7C7B;&#x53D8;&#x91CF; 
+## &#x79C1;&#x6709;&#x5C5E;&#x6027;&#x548C;&#x79C1;&#x6709;&#x65B9;&#x6CD5;(__spam)
+### &#x5B9A;&#x4E49;&#xFF1A;
+&#x6240;&#x8C13;&#x79C1;&#x6709;&#xFF0C;&#x5C31;&#x662F;&#x5728;&#x5916;&#x90E8;&#x4E0D;&#x80FD;&#x8C03;&#x7528;&#xFF0C;&#x65B9;&#x6CD5;&#x4E4B;&#x95F4;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7684;
+&#x79C1;&#x6709;&#x65B9;&#x6CD5;&#x4EE5;&#x53CA;&#x5C5E;&#x6027;&#x9700;&#x8981;&#x5728;&#x65B9;&#x6CD5;&#x540D;&#x6216;&#x5C5E;&#x6027;&#x540D;&#x524D;&#x52A0;&quot;__&quot;,&#x4F46;&#x662F;python&#x4E2D;&#x6CA1;&#x6709;&#x771F;&#x6B63;&#x7684;&#x79C1;&#x6709;&#x65B9;&#x6CD5;&#x3001;&#x79C1;&#x6709;&#x5C5E;&#x6027;
+### &#x6848;&#x4F8B;
+</code></pre><h1 id="class-p">class P():</h1>
+<h1 id="def-initselfnameage">def <strong>init</strong>(self,name,age):</h1>
+<h1 id="selfname--name">self.__name = name</h1>
+<h1 id="selfage--age">self.__age = age</h1>
+<h1 id="def-sayself">def say(self):</h1>
+<h1 id="printmy-name-is-sselfname------&#x5185;&#x90E8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;name">print(&quot;my name is %s&quot;%self.<strong>name)      #&#x5185;&#x90E8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;</strong>name</h1>
+<p>#</p>
+<h1 id="p--p&#x5C0F;&#x7EA2;19">p = P(&apos;&#x5C0F;&#x7EA2;&apos;,19)</h1>
+<h1 id="printdirp">print(dir(p))</h1>
+<h1 id="pname--&#x8096;&#x7EA2;------&#x5916;&#x90E8;&#x4E0D;&#x53EF;&#x4F7F;&#x7528;name">p.<strong>name = &quot;&#x8096;&#x7EA2;&quot;     # &#x5916;&#x90E8;&#x4E0D;&#x53EF;&#x4F7F;&#x7528;</strong>name</h1>
+<h1 id="ppname--&#x8096;&#x7EA2;--------&#x541B;&#x5B50;&#x534F;&#x8BAE;&#xFF0C;&#x4F46;&#x662F;&#x53EF;&#x4EE5;&#x5F3A;&#x5236;&#x6539;">p._P__name = &quot;&#x8096;&#x7EA2;&quot;       # &#x541B;&#x5B50;&#x534F;&#x8BAE;&#xFF0C;&#x4F46;&#x662F;&#x53EF;&#x4EE5;&#x5F3A;&#x5236;&#x6539;</h1>
+<h1 id="psay">p.say()</h1>
+<pre><code>## &#x7EE7;&#x627F;&#x4E0E;&#x591A;&#x91CD;&#x7EE7;&#x627F;(&#x6DF1;&#x5EA6;&#x4F18;&#x5148;&#x3001;&#x4ECE;&#x5DE6;&#x81F3;&#x53F3;)
+</code></pre><h1 id="&#x591A;&#x91CD;&#x7EE7;&#x627F;&#xFF1A;&#x4ECE;&#x5DE6;&#x81F3;&#x53F3;&#xFF0C;&#x6DF1;&#x5EA6;&#x4F18;&#x5148;&#xFF08;python3&#xFF09;">&#x591A;&#x91CD;&#x7EE7;&#x627F;&#xFF1A;&#x4ECE;&#x5DE6;&#x81F3;&#x53F3;&#xFF0C;&#x6DF1;&#x5EA6;&#x4F18;&#x5148;&#xFF08;python3&#xFF09;</h1>
+<h1 id="class-a">class A:</h1>
+<h1 id="def-initself">def <strong>init</strong>(self):</h1>
+<h1 id="pass">pass</h1>
+<h1 id="def-runself">def run(self):</h1>
+<h1 id="printa">print(&quot;A&quot;)</h1>
+<p>#</p>
+<h1 id="class-b">class B:</h1>
+<h1 id="def-initself">def <strong>init</strong>(self):</h1>
+<h1 id="pass">pass</h1>
+<h1 id="def-runself">def run(self):</h1>
+<h1 id="printb">print(&quot;B&quot;)</h1>
+<p>#</p>
+<h1 id="class-ca">class C(A):</h1>
+<h1 id="def-initself">def <strong>init</strong>(self):</h1>
+<h1 id="pass">pass</h1>
+<h1 id="def-sayself">def say(self):</h1>
+<h1 id="printc">print(&quot;C&quot;)</h1>
+<p>#</p>
+<h1 id="class-db">class D(B):</h1>
+<h1 id="def-initself">def <strong>init</strong>(self):</h1>
+<h1 id="pass">pass</h1>
+<h1 id="def-sayself">def say(self):</h1>
+<h1 id="printd">print(&quot;D&quot;)</h1>
+<h1 id="def-runself">def run(self):</h1>
+<h1 id="printd-run">print(&quot;D-&gt;run&quot;)</h1>
+<p>#</p>
+<h1 id="class-fcd">class F(C,D):</h1>
+<h1 id="def-initself">def <strong>init</strong>(self):</h1>
+<h1 id="pass">pass</h1>
+<p>#
+#</p>
+<h1 id="printdirc">print(dir(C))</h1>
+<h1 id="printdird">print(dir(D))</h1>
+<h1 id="f--f">f = F()</h1>
+<h1 id="fsay------&#x4ECE;&#x5DE6;&#x81F3;&#x53F3;">f.say()     # &#x4ECE;&#x5DE6;&#x81F3;&#x53F3;</h1>
+<h1 id="frun------&#x4ECE;&#x4E0A;&#x5230;&#x4E0B;&#x6DF1;&#x5EA6;&#x4F18;&#x5148;">f.run()     # &#x4ECE;&#x4E0A;&#x5230;&#x4E0B;,&#x6DF1;&#x5EA6;&#x4F18;&#x5148;</h1>
+<pre><code>
+
+</code></pre><h1 id="&#x591A;&#x91CD;&#x7EE7;&#x627F;&#xFF1A;&#x4ECE;&#x5DE6;&#x81F3;&#x53F3;">&#x591A;&#x91CD;&#x7EE7;&#x627F;&#xFF1A;&#x4ECE;&#x5DE6;&#x81F3;&#x53F3;</h1>
+<h1 id="class-car">class Car():</h1>
+<h1 id="def-initself">def <strong>init</strong>(self):</h1>
+<h1 id="selfpp--">self.pp = &quot;&quot;</h1>
+<h1 id="selfcolor--">self.color = &quot;&quot;</h1>
+<h1 id="def-runself">def run(self):</h1>
+<h1 id="print&#x542F;&#x52A8;">print(&quot;&#x542F;&#x52A8;&quot;)</h1>
+<p>#</p>
+<h1 id="class-ftcar">class FT(Car):</h1>
+<h1 id="def-initself">def <strong>init</strong>(self):</h1>
+<h1 id="superinit--super-&#x76F8;&#x5F53;&#x4E8E;this&#x6307;&#x9488;&#xFF0C;&#x7528;&#x6765;&#x5F15;&#x7528;&#x7236;&#x7C7B;&#x800C;&#x4E0D;&#x5FC5;&#x663E;&#x5F0F;&#x5730;&#x6307;&#x5B9A;&#x5B83;&#x4EEC;&#x7684;&#x540D;&#x79F0;">super().<strong>init</strong>()  #super &#x76F8;&#x5F53;&#x4E8E;this&#x6307;&#x9488;&#xFF0C;&#x7528;&#x6765;&#x5F15;&#x7528;&#x7236;&#x7C7B;&#x800C;&#x4E0D;&#x5FC5;&#x663E;&#x5F0F;&#x5730;&#x6307;&#x5B9A;&#x5B83;&#x4EEC;&#x7684;&#x540D;&#x79F0;</h1>
+<h1 id="selftype--">self.type = &quot;&quot;</h1>
+<p>#</p>
+<h1 id="class-hgft">class HG(FT):</h1>
+<h1 id="def-initself">def <strong>init</strong>(self):</h1>
+<h1 id="superhgselfinit">super(HG,self).<strong>init</strong>()</h1>
+<h1 id="selfprice--">self.price = &quot;&quot;</h1>
+<p>#</p>
+<h1 id="hg1--hg">hg1 = HG()</h1>
+<h1 id="printdirhg1">print(dir(hg1))</h1>
+<pre><code>## &#x9B54;&#x6CD5;&#x65B9;&#x6CD5;
+</code></pre><p><strong>slots</strong>  &#x9650;&#x5236;Class&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;</p>
+<pre><code>
+
+</code></pre><h1 id="class-p">class P:</h1>
+<h1 id="">&quot;&quot;&quot;</h1>
+<h1 id="person&#x7C7B;----&#x4EBA;&#x7C7B;">Person&#x7C7B;    &#x4EBA;&#x7C7B;</h1>
+<h1 id="">&quot;&quot;&quot;</h1>
+<h1 id="def-initself">def <strong>init</strong>(self):</h1>
+<h1 id="pass">pass</h1>
+<h1 id="slots--namesex"><strong>slots</strong> = [&apos;name&apos;,&apos;sex&apos;]</h1>
+<h1 id="name--person"><strong>name</strong> = &quot;Person&quot;</h1>
+<h1 id="def-runself">def run(self):</h1>
+<h1 id="printselfdoc">print(self.<strong>doc</strong>)</h1>
+<p>#</p>
+<h1 id="p--p">p = P()</h1>
+<h1 id="pname--wss">P.name = &quot;wss&quot;</h1>
+<h1 id="psex--&#x7537;">p.sex = &quot;&#x7537;&quot;</h1>
+<h1 id="page--18"># p.age = 18</h1>
+<h1 id="printdirp">print(dir(p))</h1>
+<h1 id="printpdoc">print(p.<strong>doc</strong>)</h1>
+<pre><code>
+
+</code></pre><p><strong>name</strong>   &#x7C7B;&#x540D;&#x5B57;</p>
+<pre><code>```
+ print(self.__doc__)  &#x7C7B;&#x6587;&#x6863;&#x5B57;&#x7B26;&#x4E32;&#x3001;&#x5F00;&#x5934;&#x6CE8;&#x91CA;
+</code></pre><pre><code> # &#x62FF;&#x5230;&#x51FD;&#x6570;&#x7684;&#x6CE8;&#x91CA;
+# def fn():
+#     &quot;&quot;&quot;
+#     this is fn
+#     :return:
+#     &quot;&quot;&quot;
+#     pass
+# print(fn.__doc__)
+</code></pre><p><code>__new__  &#x4E0E;  __init__  &#x5173;&#x7CFB;</code></p>
+<pre><code>__new__   &#xFF1A;&#x7B2C;&#x4E00;&#x6B65;&#x3001;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5FC5;&#x987B;&#x6709;&#x8FD4;&#x56DE;&#x503C;&#x3002;&#x628A;&#x5B9E;&#x4F8B;&#x521B;&#x5EFA;&#x51FA;&#x6765;&#xFF0C;&#x53EF;&#x80FD;&#x4EFB;&#x4F55;&#x5C5E;&#x6027;&#x90FD;&#x6CA1;&#x6709;
+__init__    &#xFF1A;&#x7B2C;&#x4E8C;&#x6B65;&#x3001;&#x7ED9;&#x5B9E;&#x4F8B;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x8D4B;&#x4E88;&#x5C5E;&#x6027;
+
+# __new__  &#x4E0E;  __init__  &#x5173;&#x7CFB;
+# class Car:
+#     def __init__(self):
+#         self.color = &quot;&quot;
+#
+# class BMW(Car):
+#     def __new__(cls, *args, **kwargs):      # &#x7B2C;&#x4E00;&#x6B65;&#x3001;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5FC5;&#x987B;&#x6709;&#x8FD4;&#x56DE;&#x503C;&#x3002;&#x628A;&#x5B9E;&#x4F8B;&#x521B;&#x5EFA;&#x51FA;&#x6765;&#xFF0C;&#x53EF;&#x80FD;&#x4EFB;&#x4F55;&#x5C5E;&#x6027;&#x90FD;&#x6CA1;&#x6709;
+#         print(&quot;new&quot;)
+#         return super().__new__(BMW)
+#
+#     def __init__(self):     # &#x7B2C;&#x4E8C;&#x6B65;&#x3001;&#x7ED9;&#x5B9E;&#x4F8B;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x8D4B;&#x4E88;&#x5C5E;&#x6027;
+#         print(&quot;init&quot;)
+#         self.pingpai = &apos;&apos;
+#
+#     def __del__(self):
+#         print(&apos;del&apos;)
+#
+# b = BMW()       # b&#x8FD0;&#x884C;&#x5B8C;&#x88AB;&#x56DE;&#x6536;&#x4E86;
+# # print(dir(b))
+# del b
+# print(b)
+</code></pre><pre><code>__str__   &#x7ED9;&#x5B9E;&#x4F8B;&#x4E00;&#x4E2A;&#x63CF;&#x8FF0;
+</code></pre><pre><code>__del__   &#x5B9E;&#x4F8B;&#x6CE8;&#x9500;&#x65F6;&#x8C03;&#x7528;
+</code></pre><h3 id="&#x5E38;&#x7528;&#x9B54;&#x6CD5;&#x65B9;&#x6CD5;">&#x5E38;&#x7528;&#x9B54;&#x6CD5;&#x65B9;&#x6CD5;</h3>
+<pre><code>1 __init__
+&#x521D;&#x59CB;&#x5316;&#x7C7B;&#x65F6;&#x5B9A;&#x4E49;&#x4E00;&#x4E9B;&#x64CD;&#x4F5C;&#x3002;
+</code></pre><pre><code>2 &#x7B97;&#x672F;&#x8FD0;&#x7B97;
+2.2.1 __add__
+&#x5B9E;&#x73B0;&#x4E86;&#x7C7B;&#x4E0E;&#x7C7B;&#x4E4B;&#x95F4;&#x7684;&#x52A0;&#x6CD5;&#x8FD0;&#x7B97;.&#x3002;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x4E24;&#x4E2A;&#x7C7B;&#x8981;&#x540C;&#x7C7B;&#x578B;&#x554A;&#x3002;
+class Vector2D:
+    def __init__(self,x,y):
+        self.x = x
+        self.y = y
+    def __add__(self,other):
+        return Vector2D(self.x + other.x,self.y + other.y)
+
+first = Vector2D(1,2)
+second = Vector2D(4,6)
+result = first + second
+print(result.x)
+print(result.y)
+
+2.2 __sub__
+&#x7C7B;&#x4F3C;&#x7684;&#xFF0C;&#x8FD9;&#x662F;&#x7C7B;&#x4E0E;&#x7C7B;&#x4E4B;&#x95F4;&#x7684;&#x51CF;&#x6CD5;&#x8FD0;&#x7B97;.&#x3002;
+
+2.3 __mul__
+&#x7C7B;&#x4E0E;&#x7C7B;&#x4E4B;&#x95F4;&#x7684;&#x4E58;&#x6CD5;&#x8FD0;&#x7B97;.&#x3002;
+
+2.4 __truediv__
+&#x7C7B;&#x4E0E;&#x7C7B;&#x4E4B;&#x95F4;&#x7684;&#x771F;&#x9664;&#x3002;&#x53EA;&#x6709;from future import division&#x4E4B;&#x540E;&#x5B83;&#x624D;&#x6709;&#x6548;
+
+2.5 __floordiv__
+&#x7C7B;&#x4E0E;&#x7C7B;&#x4E4B;&#x95F4;&#x7684;&#x6D6E;&#x70B9;&#x9664;&#x6CD5;&#x8FD0;&#x7B97;.&#x3002;
+
+2.6 __mod__
+&#x7C7B;&#x4E0E;&#x7C7B;&#x4E4B;&#x95F4;&#x7684;&#x53D6;&#x4F59;&#x8FD0;&#x7B97;.&#x3002;
+
+2.7 __pow__
+&#x7C7B;&#x4E0E;&#x7C7B;&#x4E4B;&#x95F4;&#x7684;&#x6307;&#x6570;&#x8FD0;&#x7B97;.&#x3002;
+
+2.8 __and__
+&#x7C7B;&#x4E0E;&#x7C7B;&#x4E4B;&#x95F4;&#x7684;&#x6309;&#x4F4D;&#x4E0E;&#x8FD0;&#x7B97;.&#x3002;
+
+2.9 __xor__
+&#x7C7B;&#x4E0E;&#x7C7B;&#x4E4B;&#x95F4;&#x7684;&#x6309;&#x4F4D;&#x5F02;&#x6216;&#x8FD0;&#x7B97;.&#x3002;
+
+2.10 __or__
+&#x7C7B;&#x4E0E;&#x7C7B;&#x4E4B;&#x95F4;&#x7684;&#x6309;&#x4F4D;&#x6216;&#x8FD0;&#x7B97;.&#x3002;
+</code></pre><pre><code>3 &#x6BD4;&#x8F83;&#x8FD0;&#x7B97;
+3.1 __It__
+&#x5B9A;&#x4E49;&#x4E86;&#x6BD4;&#x8F83;&#x64CD;&#x4F5C;&#x7B26;&lt;&#x3002;
+
+3.2 __gt__
+&#x5B9A;&#x4E49;&#x4E86;&#x6BD4;&#x8F83;&#x64CD;&#x4F5C;&#x7B26;&gt;&#x3002;.
+
+3.3 __le__
+&#x5B9A;&#x4E49;&#x4E86;&#x6BD4;&#x8F83;&#x64CD;&#x4F5C;&#x7B26;&lt;=&#x3002;
+
+3.4 __ge__
+&#x5B9A;&#x4E49;&#x4E86;&#x6BD4;&#x8F83;&#x64CD;&#x4F5C;&#x7B26;&gt;=&#x3002;
+
+3.5 __eq__
+&#x5B9A;&#x4E49;&#x4E86;&#x6BD4;&#x8F83;&#x64CD;&#x4F5C;&#x7B26;==&#x3002;
+
+3.6 __ne__
+&#x5B9A;&#x4E49;&#x4E86;&#x6BD4;&#x8F83;&#x64CD;&#x4F5C;&#x7B26;!=&#x3002;
+</code></pre><pre><code>4 &#x5BB9;&#x5668;&#x6240;&#x4F7F;&#x7528;&#x7684;&#x4E00;&#x4E9B;&#x9B54;&#x6CD5;&#x65B9;&#x6CD5;
+&#x5728;Python&#x4E2D;&#xFF0C;&#x5E38;&#x89C1;&#x7684;&#x5BB9;&#x5668;&#x7C7B;&#x578B;&#x6709;: &#x8BCD;&#x5178;, &#x5143;&#x7EC4;, &#x5217;&#x8868;&#x7B49;&#x3002;
+
+4.1 __len__
+&#x8FD4;&#x56DE;&#x5BB9;&#x5668;&#x7684;&#x957F;&#x5EA6;&#x3002;
+
+4.2 __getitem__
+getitem(self, key),&#x4F7F;&#x7528;self[key]&#x8BBF;&#x95EE;&#x5BB9;&#x5668;&#x5185;&#x5BB9;&#x3002;
+
+4.3 __setitem__
+setitem(self, key, value)&#xFF0C;&#x4F7F;&#x7528;self[nkey] = value&#x8D4B;&#x503C;&#x5BB9;&#x5668;&#x4E2D;&#x7684;&#x4E00;&#x9879;&#x3002;
+
+4.4 __delitem__
+delitem(self, key)&#xFF0C;&#x5220;&#x9664;self[nkey]&#x3002;
+</code></pre><h2 id="&#x9A8C;&#x8BC1;">&#x9A8C;&#x8BC1;</h2>
+<ul>
+<li>ifinstance&#xFF08;&#xFF09;&#x6765;&#x68C0;&#x67E5;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#x7684;&#x7C7B;&#x578B;<ul>
+<li>print(isinstance(obj&#xFF0C;class))  &#x9A8C;&#x8BC1;obj&#x662F;&#x5426;&#x4E3A;class&#x7684;&#x5B9E;&#x4F8B;</li>
+</ul>
+</li>
+<li>lssubclass&#xFF08;&#xFF09;&#x6765;&#x68C0;&#x67E5;&#x7C7B;&#x7684;&#x7EE7;&#x627F;&#x5173;&#x7CFB;<ul>
+<li>print(issubclass(P,A))</li>
+</ul>
+</li>
+<li>type&#xFF08;&#xFF09;&#x67E5;&#x770B;&#x7C7B;&#x578B;<br>dir&#xFF08;&#xFF09;&#x83B7;&#x53D6;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../常用的系统内建函数/内建函数.html" class="navigation navigation-prev " aria-label="Previous page: 常用的系统内建函数">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="面向对象单例设计模式.html" class="navigation navigation-next " aria-label="Next page: 面向对象单例设计模式">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"面向对象OOP","level":"1.8","depth":1,"next":{"title":"面向对象单例设计模式","level":"1.8.1","depth":2,"path":"python/面向对象OOP/面向对象单例设计模式.md","ref":"python/面向对象OOP/面向对象单例设计模式.md","articles":[]},"previous":{"title":"常用的系统内建函数","level":"1.7","depth":1,"path":"python/常用的系统内建函数/内建函数.md","ref":"python/常用的系统内建函数/内建函数.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"python/面向对象OOP/面向对象OOP.md","mtime":"2019-04-14T03:54:52.781Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-14T16:02:33.203Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
